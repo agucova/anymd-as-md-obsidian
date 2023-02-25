@@ -1,8 +1,8 @@
-# qmd as md Obsidian plugin
+# anymd as md Obsidian plugin
 
-A plugin for [Obsidian](https://obsidian.md) which allows editing of qmd files as if they were markdown.
+A plugin for [Obsidian](https://obsidian.md) which allows editing of qmd and rmd files as if they were markdown.
 
-QMD files contain a combination of markdown and executable code cell, and are format supported by [Quarto](https://quarto.org/) open source publishing systems, they are supported in Rstudio and VSCode editors.
+QMD files contain a combination of markdown and executable code cell, and are format supported by [Quarto](https://quarto.org/) open source publishing systems, they are supported in Rstudio and VSCode editors. RMD files are similar to QMD files, but are supported by Rstudio and VSCode editors.
 
 To be able to use  linking with  the quatro files you need to check the toggle "detect all files extension" in `Files & Links` section in Obsidian.
 
@@ -43,7 +43,7 @@ Plugin is a small tweak of a plugin made by deathau: [deathau/txt-as-md-obsidian
 
 ### Compatibility
 
-The required APIs were only added in Obsidian **0.10.12**, and as such, that is the minimum version of Obsidian required to use this plugin. 
+The required APIs were only added in Obsidian **0.10.12**, and as such, that is the minimum version of Obsidian required to use this plugin.
 
 ## Installation
 
@@ -52,7 +52,7 @@ Currently the plugin is not accesible in the Obsidian n the community list. Tho 
 
 ### From GitHub
 - Download the Latest Release from the Releases section of the GitHub Repository
-- Extract the plugin folder from the zip to your vault's plugins folder: `<vault>/.obsidian/plugins/`  
+- Extract the plugin folder from the zip to your vault's plugins folder: `<vault>/.obsidian/plugins/`
 Note: On some machines the `.obsidian` folder may be hidden. On MacOS you should be able to press `Command+Shift+Dot` to show the folder in Finder.
 - Reload Obsidian
 - If prompted about Safe Mode, you can disable safe mode and enable the plugin.
@@ -68,7 +68,7 @@ I can assure you here that I do nothing to collect your data, send information t
 
 ## Development
 
-This project uses Typescript to provide type checking and documentation.  
+This project uses Typescript to provide type checking and documentation.
 The repo depends on the latest [plugin API](https://github.com/obsidianmd/obsidian-api) in Typescript Definition format, which contains TSDoc comments describing what it does.
 
 **Note:** The Obsidian API is still in early alpha and is subject to change at any time!
@@ -83,7 +83,7 @@ folder (e.g, `<vault>/.obsidian/plugins/<plugin-name>/`)
 - Reload obsidian to see changes
 
 Alternately, you can clone the repo directly into your plugins folder and once
-dependencies are installed use `npm run dev` to start compilation in watch mode.  
+dependencies are installed use `npm run dev` to start compilation in watch mode.
 You may have to reload obsidian (`ctrl+R`) to see changes.
 
 ## Pricing
@@ -98,3 +98,5 @@ Plugin is completely free, but you might contribute to the author of the orginal
 Initial release by death_md supporting txt!
 ## 0.0.2
 Repurposing this plugin to viev and edit qmd files, plugin available via BRAT.
+## 0.0.3
+Added support for rmd files.
