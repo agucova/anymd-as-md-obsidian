@@ -9,6 +9,7 @@ on:
 jobs:
   bump:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
     - uses: actions/checkout@v2
       with:
