@@ -1,10 +1,8 @@
 # anymd as md Obsidian plugin
 
-A plugin for [Obsidian](https://obsidian.md) which allows editing of qmd and rmd files as if they were markdown.
+A plugin for [Obsidian](https://obsidian.md) which allows editing of qmd and rmd files as if they were normal markdown files. [Quarto](https://quarto.org/) (.qmd) is the next generation format meant to replace Rmarkdown (.rmd).
 
-QMD files contain a combination of markdown and executable code cell, and are format supported by [Quarto](https://quarto.org/) open source publishing systems, they are supported in Rstudio and VSCode editors. RMD files are similar to QMD files, but are supported by Rstudio and VSCode editors.
-
-To be able to use  linking with  the quatro files you need to check the toggle "detect all files extension" in `Files & Links` section in Obsidian.
+To be able to use linking with the any of these files you need to check the toggle "detect all files extension" in `Files & Links` section in Obsidian (which will override the default behaviour of Obsidian to only detect markdown files, including unrelated files).
 
 To hide additional files you might use this CSS chunk (save it as a file to your snippets folder and enable it in Obsidian in the Appeareance menu), you might add aditional filetypes.
 
@@ -30,14 +28,14 @@ Plugin is a small tweak of a plugin made by deathau: [deathau/txt-as-md-obsidian
 
 ### Plugins for better editing experience
 
-- Use  [obsidian-shellcomands](obsidian://show-plugin?id=obsidian-shellcommands) with `quarto render {{file_path:absolute}} --to pdf` to render the file inside Obsidian
+- Use  [obsidian-shellcomands](obsidian://show-plugin?id=obsidian-shellcommands) with `quarto render {{file_path:absolute}} --to pdf` to render the file inside Obsidian. This should work for both qmd and rmd files.
 -  Use [HTML Reader](obsidian://show-plugin?id=obsidian-html-plugin) to render HTML output inside Obsidian, Obsidian natively supports pdfs.
 
 
 ### To-do
 
 - [ ] Creation of new qmd files
-- [ ] Currly braces `{language}` treated as language for codeblock
+- [ ] Curly braces `{language}` treated as language for codeblock
 - [ ] CSS for callout blocks
 - [ ] Better integration with Obsidian
 
@@ -48,7 +46,7 @@ The required APIs were only added in Obsidian **0.10.12**, and as such, that is 
 ## Installation
 
 ### From within Obsidian
-Currently the plugin is not accesible in the Obsidian n the community list. Tho access and beta test it, you can use [the BRAT plugin](https://github.com/TfTHacker/obsidian42-brat).
+Currently the plugin is not accesible in the Obsidian Community list. To access and beta test it, you can use [the BRAT plugin](https://github.com/TfTHacker/obsidian42-brat).
 
 ### From GitHub
 - Download the Latest Release from the Releases section of the GitHub Repository
